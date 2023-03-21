@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Ejercicio1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hola Mundito");
+            Console.WriteLine("Ingrese nombre : ");
+            //Esto es un scanner
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Su nombre es " + nombre);
+            Console.ReadKey();
         }
     }
 }

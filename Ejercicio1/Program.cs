@@ -16,11 +16,21 @@ namespace Ejercicio1
             string nombre = Console.ReadLine();
             //Console.WriteLine("Su nombre es " + nombre);
             Console.WriteLine("Ingrese la edad : ");
-            string edad = Console.ReadLine().Trim();
+            string edadTx = Console.ReadLine().Trim();
             //TRIM = '  32  ' => '32'
             //TRIMSTART = '  32  ' => '32  '
             //TRIMEND = '  32  ' => '  32'
-            Console.WriteLine("Su nombre es {0} y la edad es {1}", nombre, edad);
+
+            try 
+            {
+                int edad2 = int.Parse(edadTx);
+            } catch(Exception ex) 
+            { 
+            
+            } 
+            
+
+            Console.WriteLine("Su nombre es {0} y la edad es {1}", nombre, edad2);
             Console.ReadKey();
         }
     }
